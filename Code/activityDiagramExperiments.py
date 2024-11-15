@@ -37,8 +37,7 @@ llm = ChatGoogleGenerativeAI(model='gemini-1.5-pro',temperature=0, api_key="inse
 modelList.append(llm)
 llm = ChatAnthropic(model='claude-3-5-sonnet-20240620',temperature=0, api_key="insertKeyHere")
 modelList.append(llm)
-# llm = ChatOpenAI(model='o1-mini-2024-09-12',temperature=0, openai_api_key="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")
-# modelList.append(llm)
+
 
 modelDict = dict(zip(modelKeys, modelList))
 
